@@ -8,10 +8,13 @@ A basic calculator bot
 Prefix is '!'.
 Supported commands are:
 1. !online: Checks whether the bot is online
+
+![Using !online](images/online.png?raw=true "Online")
+
 2. !calc: Peforms arithmetic on two numbers (+, -, *, / and ^ are currently supported)
 
-## Examples
-![Using the !online command](images/online.png?raw=true "Using !online")
+![Using !calc](images/calc.png?raw=true "Calc")
 
+3. !quad: Finds the roots of a quadratic equation with coefficients a, b and c
 
-![Using the !calc command](images/calc.png?raw=true "Using !calc")
+![Using !quad](images/quad.png?raw=true "Quad")
