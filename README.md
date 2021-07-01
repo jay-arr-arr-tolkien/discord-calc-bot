@@ -27,3 +27,7 @@ Supported commands are:
 3. !quad: Finds the roots of a quadratic equation with coefficients a, b and c
 
 ![Using !quad](images/quad.png?raw=true "Quad")
+
+4. !wolfram: Searches the query on Wolfram-Alpha
+
+![Using !wolfram](images/wolfram.png?raw=true "Wolfram")
