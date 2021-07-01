@@ -12,14 +12,22 @@ async def online(ctx):
 async def calc(ctx, x: float, fn: str, y: float):
     if fn == '+':
         await ctx.send(x+y)
+
     elif fn == '-':
         await ctx.send(x-y)
+
     elif fn == '*':
         await ctx.send(x*y)
+        
     elif fn == '/':
-        await ctx.send(x/y)
+        try:
+            await ctx.send(x/y)
+        except ZeroDivisionError:
+            await ctx.send("Division by 0 is not permitted")
+            
     elif fn == '^':
         await ctx.send(x**y)
+        
     else:
         await ctx.send("Function is currently unaccepted")
 
