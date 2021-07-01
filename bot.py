@@ -1,5 +1,4 @@
 from discord.ext import commands
-import cmath
 
 bot = commands.Bot(command_prefix='!')
 
@@ -51,6 +50,11 @@ async def quad(ctx, a: float, b: float, c: float):
         z1 = complex(x, y)
         await ctx.send("x1 = {} + {}i".format(z1.real, z1.imag))
         await ctx.send("x2 = {} - {}i".format(z1.real, z1.imag))
+
+
+@bot.command(name="wolfram", help="Searches Wolfram-Alpha")
+async def wolfram(ctx, *args):
+    await ctx.send("{} on Wolfram-Alpha: https://www.wolframalpha.com/input/?i={}".format(' '.join(args), '+'.join(args)))
 
 
 with open("TOKEN.txt", "r") as token_file:
