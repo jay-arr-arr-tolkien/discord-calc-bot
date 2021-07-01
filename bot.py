@@ -48,8 +48,9 @@ async def quad(ctx, a: float, b: float, c: float):
         x = round((-b) / (2*a), 4)
         y = round(abs(((-det)**0.5) / (2*a)), 4)
         z1 = complex(x, y)
-        await ctx.send("x1 = {} + {}i".format(z1.real, z1.imag))
-        await ctx.send("x2 = {} - {}i".format(z1.real, z1.imag))
+        z2 = complex(x, -y)
+        await ctx.send("x1 = {}".format(z1))
+        await ctx.send("x2 = {}".format(z2))
 
 
 @bot.command(name="wolfram", help="Searches Wolfram-Alpha")
