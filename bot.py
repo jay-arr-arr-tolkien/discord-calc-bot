@@ -33,10 +33,10 @@ async def quad(ctx, a: float, b: float, c: float):
 
     # Case of real and unequal roots
     elif det > 0:
-        x_1 = round((-b + (det**0.5)) / (2*a), 4)
-        x_2 = round((-b - (det**0.5)) / (2*a), 4)
-        await ctx.send("x1 = {}".format(x_1))
-        await ctx.send("x2 = {}".format(x_2))
+        x1 = round((-b + (det**0.5)) / (2*a), 4)
+        x2 = round((-b - (det**0.5)) / (2*a), 4)
+        await ctx.send("x1 = {}".format(x1))
+        await ctx.send("x2 = {}".format(x2))
 
     # Case of equal roots
     elif det == 0:
