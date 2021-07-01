@@ -53,7 +53,7 @@ async def quad(ctx, a: float, b: float, c: float):
         await ctx.send("x2 = {} - {}i".format(z1.real, z1.imag))
 
 
-with open("BOT_TOKEN.txt", "r") as token_file:
+with open("TOKEN.txt", "r") as token_file:
     TOKEN = token_file.read()
     print("Token file read")
     bot.run(TOKEN)
