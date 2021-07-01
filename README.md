@@ -7,7 +7,7 @@ A basic calculator bot
 3. Install the requirements using `pip install -r requirements.txt` or `python3 -m pip install -r requirements.txt`
 4. Change the working directory using `cd discord-calc-bot`.
 5. Follow the steps shown [here](https://www.writebots.com/discord-bot-token/) to create the bot, get its token and add it to a server.
-6. Create a file `TOKEN.txt` using `touch TOKEN.txt`. Paste the token in the first line of this file.
+6. Create a file `TOKEN.txt` using `touch TOKEN.txt`. Paste the token in the first line of this file. (Remember that this token should never be shared publicly.)
 7. That's it! Running the program using `python bot.py` should bring the bot online!
 
 ## Directly adding to server
